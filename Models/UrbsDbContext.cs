@@ -12,19 +12,19 @@ public class UrbsDbContext(DbContextOptions options) : DbContext(options)
     {
         model.Entity<User>()
             .HasOne(u => u.Tour)
-            .WithMany(t => t.U)
+            .WithMany(t => t.Users)
             .HasForeignKey(u => u.TourId)
             .OnDelete(DeleteBehavior.NoAction);
 
         model.Entity<Tour>()
             .HasOne(t => t.User)
-            .WithMany(u => u.Tour)
+            .WithMany(u => u.Tours)
             .HasForeignKey(u => u.PointId)
             .OnDelete(DeleteBehavior.NoAction);
 
         model.Entity<Point>()
             .HasOne(p => p.Tour)
-            .WithMany(t => t.Point)
+            .WithMany(t => t.Points)
             .HasForeignKey(u => u.TourId)
             .OnDelete(DeleteBehavior.NoAction);
 

@@ -1,0 +1,30 @@
+Simulado de C# Web
+Você está fazendo uma aplicação para que usuários salvem passeios que fizeram ou planejam fazer. Um usuário tem Nome completo, 
+Nome de Usuário, Senha. Criar um passeio com Título, Descrição e vários pontos turísticos, restaurantes, parques etc. 
+Os Pontos do passeio tem apenas título e serão pré-cadastrados no banco de dados por você. Entregue um script (.sql) com inserts para os
+6 pontos que você acha mais legais de ir em Curitiba e/ou região metropolitana (Araucária e Campo Largo mencionados).
+Seu papel nesse sistema será implementar as seguintes funcionalidades:
+•
+Login de usuário com autentificação JWT. Você não precisa criptografar a senha nesta atividade e pode cadastrar usuários diretamente 
+no banco de dados.
+
+•
+Cadastro de um novo passeio vazio com apenas seu título e descrição. Um título não pode possuir mais que 20 caracteres e sua descrição 
+deve ter de 40 a 200 caracteres.
+
+•
+Editar um passeio adicionando um novo ponto turístico ao passeio, enviando o ID do ponto turístico e o ID do passeio. 
+Isso só é possível para o usuário que criou o passeio.
+
+•
+Ver o passeio, com título, descrição, nome dos pontos e nome do criador. Essa funcionalidade é publica e não é preciso estar logado.
+
+Seu líder lhe passa a seguinte informação: A equipe deseja implementar alguns recursos no futuro que processam a descrição dos passeios. 
+Atualmente esse processamento apenas o embeleza tirando espaços duplos “ “ e 
+substituindo por espaços simples “ “ (ele diz que você pode usar o código novoTexto = textoAntigo.Replace(“ “, “ “) para fazer isso). 
+Mas no futuro (não será implementado agora) talvez permitir marcar pessoas no passeio, referenciar outros passeios e pontos etc. 
+O que você poderá fazer para implementar esse recurso e melhorar a qualidade do sistema sabendo disso?
+Habilite o Swagger na aplicação para facilitar seus testes. Faça o projeto inteiramente no Github e realize commits regularmente.
+
+git config --global user.name "juuhhcarol"
+git config --global user.email "juliecaroe17@gmail.com"

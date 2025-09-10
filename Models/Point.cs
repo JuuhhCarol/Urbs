@@ -4,4 +4,5 @@ public class Point
 {
     public Guid PointId { get; set; }
     public string Title { get; set; }
+    public Tour Tour { get; set; }
 }

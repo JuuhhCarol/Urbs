@@ -1,0 +1,4 @@
+Fiquei meio perdida na hora de criar o Bd, mas se as tabelas estivessem certas, precisa dar os comandos:
+dotnet ef migrations add InitialModel
+dotnet ef database update
+para criar as migrations, que gera o codigo que cria as tabelas no sql 
