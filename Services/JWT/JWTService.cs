@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Urbs.Services.JWT;
 
-namespace ThePixeler.Services.JWT;
+namespace Urbs.Services.JWT;
 
 public class JWTService : IJWTService
 {
